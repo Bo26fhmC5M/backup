@@ -62,12 +62,12 @@ except (urllib.error.URLError, urllib.error.HTTPError, TypeError):
 
 print(external_ip)
 
-if test_tcp_port(external_ip.strip(), "42000"):
-    print(f"Test passed. 42000")
+if test_tcp_port(external_ip.strip(), "5000"):
+    print(f"Test passed. 5000")
 else:
-    print(f"Test failed. 42000")
+    print(f"Test failed. 5000")
 
-if test_tcp_port(external_ip.strip(), "42001"):
-    print(f"Test passed. 42001")
+if test_tcp_port(external_ip.strip(), "5001"):
+    print(f"Test passed. 5001")
 else:
-    print(f"Test failed. 42001")
+    print(f"Test failed. 5001")
