@@ -5,15 +5,15 @@
 
 if [[ "${1,,}" == "install" ]]; then
 cd /opt
-sudo curl -L https://download.jetbrains.com/python/pycharm-community-2023.3.4.tar.gz | sudo tar -xzv
+sudo curl -L https://download.jetbrains.com/python/pycharm-community-2023.3.5.tar.gz | sudo tar -xzv
 
 sudo tee /usr/share/applications/pycharm.desktop << 'EOF' > /dev/null
 [Desktop Entry]
-Version=2023.3.4
+Version=2023.3.5
 Type=Application
 Name=PyCharm
-Icon=/opt/pycharm-community-2023.3.4/bin/pycharm.png
-Exec=/opt/pycharm-community-2023.3.4/bin/pycharm.sh
+Icon=/opt/pycharm-community-2023.3.5/bin/pycharm.png
+Exec=/opt/pycharm-community-2023.3.5/bin/pycharm.sh
 Categories=Development;IDE;
 Terminal=false
 EOF
